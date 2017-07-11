@@ -12,11 +12,14 @@ public class GraphMain{
 	m.up(); m.moveTo(x0, y0, 90); m.down();
 	m.setColor(java.awt.Color.black);
 
+	m.origin_x = 20;
+	m.origin_y = 200;
+
 	int n=51;
 	int[] x = new int[n], y = new int[n];
 	for(int i=0; i<n; i++){
-		x[i]=7*i+x0;
-		y[i]=-(int)(100*Math.sin(2*Math.PI*i/(n-1)))+y0;
+		x[i]=7*i;
+		y[i]=(int)(100*Math.sin(2*Math.PI*i/(n-1)));
 	}
 	m.drawlines(n, x, y);
  }
