@@ -6,6 +6,11 @@ public class Graph extends Turtle{
 			moveTo(x[i] + origin_x, -y[i] + origin_y);
 		}
 	}
+	public void drawlines(int n, double ax, double ay, double x[], double y[]){
+		for(int i = 0; i < n; i++){
+			moveTo(x[i] * ax + origin_x, -y[i] * ay + origin_y);
+		}
+	}
 	public void setOrigin(int origin_x, int origin_y){
 		this.origin_x = origin_x;
 		this.origin_y = origin_y;
