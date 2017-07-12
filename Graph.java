@@ -16,4 +16,13 @@ public class Graph extends Turtle{
 	public int getOriginY(){
 		return origin_y;
 	}
+	public void drawAxis(int xmin, int xmax, int ymin, int ymax){
+		setColor(java.awt.Color.red);
+		up(); moveTo(xmin+origin_x, origin_y, 0);
+		down(); moveTo(xmax+origin_x, origin_y, 180);
+		up(); moveTo(origin_x, ymin+origin_y, 90);
+		down(); moveTo(origin_x, ymax+origin_y, 90);
+		up(); moveTo(origin_x, origin_y, 90); down();
+		setColor(java.awt.Color.black);
+	}
 }
