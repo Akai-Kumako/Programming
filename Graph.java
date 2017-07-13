@@ -1,6 +1,15 @@
 public class Graph extends Turtle{
 	private int origin_x = 0;
 	private int origin_y = 0;
+	
+	//コンストラクタ
+	public Graph(int origin_x, int origin_y){
+		setOrigin(origin_x, origin_y);
+	}
+	public Graph(){
+		setOrigin(20, 200);
+	}
+
 	public void drawlines(int n, int x[], int y[]){
 		for(int i = 0; i < n; i++){
 			moveTo(x[i] + origin_x, -y[i] + origin_y);
