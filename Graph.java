@@ -4,6 +4,7 @@ public class Graph extends Turtle{
 	
 	//コンストラクタ
 	public Graph(int origin_x, int origin_y){
+		super(origin_x, origin_y, 0);
 		setOrigin(origin_x, origin_y);
 	}
 	public Graph(){
