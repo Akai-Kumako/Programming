@@ -1,10 +1,4 @@
 public class HTurtle extends Turtle{
-	
-	//コンストラクタ
-	public HTurtle(int x, int y, int angle){
-		super(x, y, angle);
-	}
-
 	public void polygon(int n, int s){
 		int a = 360 / n;
 		for(int j = 0; j < n; j++){
